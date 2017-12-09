@@ -4,6 +4,9 @@
  * */
 
 // "state = null" is set so that we don't throw an error when app first boots up
+
+// All reducers are called when an action occurs
+// reducers just return data(state)
 export default function (state = null, action) {
     switch (action.type) {
         case 'USER_SELECTED':
